@@ -16,16 +16,16 @@ const profiles = [{
   ],
   worksArray: [
     {
-      name: work1,
-      description: description1,
+      name: 'work1',
+      description: 'description1',
     },
     {
-      name: work2,
-      description: description2,
+      name: 'work2',
+      description: 'description2',
     },
     {
-      name: work3,
-      description: description3,
+      name: 'work3',
+      description: 'description3',
     },
   ],
   periodsOfLifeArray: [
