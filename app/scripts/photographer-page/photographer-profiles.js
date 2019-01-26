@@ -14,6 +14,20 @@ const profiles = [{
       subscribe: 'Выставка фотографий Бенедикта Тышкевича в Национальном историческом музее в Минске'
     }
   ],
+  worksArray: [
+    {
+      name: work1,
+      description: description1,
+    },
+    {
+      name: work2,
+      description: description2,
+    },
+    {
+      name: work3,
+      description: description3,
+    },
+  ],
   periodsOfLifeArray: [
     {
       date: 1852,
