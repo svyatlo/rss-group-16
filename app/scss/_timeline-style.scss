@@ -187,7 +187,7 @@ Vertical Timeline - by CodyHouse.co
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid rgb(224, 224, 224);
 }
 
 .cd-timeline__content h2 {
@@ -254,7 +254,7 @@ Vertical Timeline - by CodyHouse.co
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: rgb(224, 224, 224);
   }
   .cd-timeline__read-more {
     float: left;
@@ -274,7 +274,7 @@ Vertical Timeline - by CodyHouse.co
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: rgb(224, 224, 224);
   }
   .cd-timeline__block:nth-child(even) .cd-timeline__read-more {
     float: right;
