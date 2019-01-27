@@ -309,12 +309,6 @@ body.hidden-scroll {
   }
   
   .container {
-	max-width: 1170px;
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
 	
 	.gallery {
 	  a {
@@ -344,7 +338,7 @@ body.hidden-scroll {
 		
 		&.big {
 		  img {
-			width: 40%;
+			width: 50%;
 		  }
 		}
 	  }

@@ -6,11 +6,11 @@ const profiles = [{
   keyWords: ['Бенедикт', 'Тышкевич', '1852', 'Немеж', 'Ковно', 'Раудондварис', 'Каунас', 'путешественник', 'фотограф', 'граф', 'Франция'],
   videosArray: [
     {
-      link: 'https://www.youtube.com/watch?v=53vi7zTGkAE&feature=youtu.be&t=43',
+      link: 'https://www.youtube.com/embed/53vi7zTGkAE?html5=1',
       subscribe: 'Выставка фотографий Бенедикта Тышкевича в Полоцке',
     },
     {
-      link: 'https://www.youtube.com/watch?v=OQumNZP3Hgk',
+      link: 'https://www.youtube.com/embed/OQumNZP3Hgk?html5=1',
       subscribe: 'Выставка фотографий Бенедикта Тышкевича в Национальном историческом музее в Минске',
     },
   ],

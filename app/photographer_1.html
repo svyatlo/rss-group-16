@@ -44,62 +44,32 @@
     </header>
   </div>
   <main>
-    <section class="container text-center js-photographer">
+    <section class="container mt-5 text-center js-photographer">
       <h1 class="js-photographer-name">Photographer name</h1>
       <img src="" class="rounded js-photographer-photo" alt="photographer-photo">
     </section>
-    <section class="cd-timeline js-cd-timeline">
+    <section class="container cd-timeline js-cd-timeline">
       <div class="cd-timeline__container"></div>
     </section>
-    <section class="container">
-      <ul class="list-group list-group-flush js-list-of-works">
-        <li class="list-group-item js-list-of-works-item">
-          <h3 class="js-list-of-works-item-title">Work 1</h3>
-          <p class="js-list-of-works-item-description">Cras justo odio</p>
-        </li>
-        <li class="list-group-item js-list-of-works-item">
-          <h3 class="js-list-of-works-item-title">Work 2</h3>
-          <p class="js-list-of-works-item-description">Cras justo odio</p>
-        </li>
-        <li class="list-group-item js-list-of-works-item">
-          <h3 class="js-list-of-works-item-title">Work 3</h3>
-          <p class="js-list-of-works-item-description">Cras justo odio</p>
-        </li>
-        <li class="list-group-item js-list-of-works-item">
-          <h3 class="js-list-of-works-item-title">Work 4</h3>
-          <p class="js-list-of-works-item-description">Cras justo odio</p>
-        </li>
-        <li class="list-group-item js-list-of-works-item">
-          <h3 class="js-list-of-works-item-title">Work 5</h3>
-          <p class="js-list-of-works-item-description">Cras justo odio</p>
-        </li>
-      </ul>
-    </section>
-    <section class="container js-gallery">
-      <div class="gallery">
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title="Beautiful Image" /></a>
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title=""/></a>
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title="Beautiful Image"/></a>
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title=""/></a>
-        <div class="clear"></div>
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title=""/></a>
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title=""/></a>
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title=""/></a>
-        <a href="https://www.legitkvs.com/images/testimonial_2.jpg"><img src="https://www.legitkvs.com/images/testimonial_2.jpg" alt="" title=""/></a>
-        <div class="clear"></div>
+    <section class="container mt-5">
+      <h3 class="">Works section</h3>
+      <div>
+        <ul class="list-group list-group-flush js-list-of-works">
+        </ul>
       </div>
     </section>
-    <section class="container my-2">
+    <section class="container mt-5">
+      <h3 class="">Gallery section</h3>
+      <div class="gallery js-gallery">
+      </div>
+    </section>
+    <section class="container mt-5">
+      <h3 class="">Video section</h3>
+      <div class="list-group-container">
         <ul class="list-group list-group-flush js-videos">
-          <li class="list-group-item js-videos-item">
-            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s?html5=1">VIDEO1</a>
-          </li>
-          <li class="list-group-item js-videos-item">
-            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/j8cJONHXEMI?html5=1">VIDEO2</a>
-          </li>
         </ul>
-
-        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      </div>
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body">
@@ -112,7 +82,10 @@
           </div>
         </div>
     </section>
-    <section id="mapid" class="container" style="height: 500px;"></section>
+    <section class="container mt-5" style="height: 500px;">
+      <h3 class="mx-1">Map section</h3>
+      <div id="mapid" class="h-100"></div>
+    </section>
   </main>
   <script src="./scripts/photographer-page/timeline.js"></script>
   <script src="./scripts/photographer-page/video-overlay.js"></script>
@@ -120,7 +93,6 @@
   <script src="./scripts/photographer-page/photographer-profiles.js"></script>
   <script>
     document.title = profiles[0].name;
-
     $('.js-photographer-name').text(profiles[0].name);
 
     const mainPhoto = document.querySelector('.js-photographer-photo');
@@ -131,47 +103,45 @@
       <div class="cd-timeline__block js-cd-block">
         <div class="cd-timeline__img cd-timeline__img--fact js-cd-img"></div>
         <div class="cd-timeline__content js-cd-content">
-          <h2 class="js-cd-content-title"> ${element.fact} </h2>
-          <p class="js-cd-content-description"> ${element.additional} </p>
-          <span class="cd-timeline__date"> ${element.date} </span>
+          <h2 class="js-cd-content-title">${element.fact}</h2>
+          <p class="js-cd-content-description">${element.additional}</p>
+          <span class="cd-timeline__date">${element.date}</span>
         </div>
       </div>`;
       $('.cd-timeline__container').append(timelineItemTemplate);
     });
+
+    profiles[0].worksArray.forEach(element => {
+      const workItemTemplate = `
+      <li class="list-group-item js-list-of-works-item">
+        <h3 class="js-list-of-works-item-title">${element.name}</h3>
+        <p class="js-list-of-works-item-description">${element.description}</p>
+      </li>`;
+      $('.js-list-of-works').append(workItemTemplate);
+    });
+
+    profiles[0].imagesArray.forEach(element => {
+      const galleryItemTemplate = `
+      <a href=${element.src} class="js-gallery-item">
+        <img src=${element.src} alt=${element.description} title=${element.description} class="js-gallery-item-image"/>
+      </a>`;
+      $('.js-gallery').append(galleryItemTemplate);
+    });
+    $('.js-gallery').append(`<div class="clear"></div>`);
+
+    profiles[0].videosArray.forEach(element => {
+      const videoItemTemplate = `
+      <li class="list-group-item js-videos-item">
+        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo=${element.link}">${element.subscribe}</a>
+      </li>
+      `;
+      $('.js-videos').append(videoItemTemplate);
+    });
+
+
   </script>
   <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox.js"></script>
-  <script>
-    $(() => {
-      const $gallery = $('.gallery a').simpleLightbox();
-  
-      $gallery.on('show.simplelightbox', () => {
-      })
-      .on('shown.simplelightbox', () => {
-      })
-      .on('close.simplelightbox', () => {
-      })
-      .on('closed.simplelightbox', () => {
-      })
-      .on('change.simplelightbox', () => {
-      })
-      .on('next.simplelightbox', () => {
-      })
-      .on('prev.simplelightbox', () => {
-      })
-      .on('nextImageLoaded.simplelightbox', () => {
-      })
-      .on('prevImageLoaded.simplelightbox', () => {
-      })
-      .on('changed.simplelightbox', () => {
-      })
-      .on('nextDone.simplelightbox', () => {
-      })
-      .on('prevDone.simplelightbox', () => {
-      })
-      .on('error.simplelightbox', () => {
-      });
-    });
-  </script>
+  <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox-controller.js"></script>
 </body>
 
 </html>
