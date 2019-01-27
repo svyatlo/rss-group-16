@@ -28,6 +28,24 @@ const profiles = [{
       description: 'description3',
     },
   ],
+  imagesArray: [
+    {
+      description: 'image1',
+      src: 'https://www.legitkvs.com/images/testimonial_1.jpg',
+    },
+    {
+      description: 'image2',
+      src: 'https://www.legitkvs.com/images/testimonial_2.jpg',
+    },
+    {
+      description: 'image3',
+      src: 'https://www.legitkvs.com/images/testimonial_1.jpg',
+    },
+    {
+      description: 'image4',
+      src: 'https://www.legitkvs.com/images/testimonial_2.jpg',
+    },
+  ],
   periodsOfLifeArray: [
     {
       date: 1852,
