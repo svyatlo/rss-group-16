@@ -1,5 +1,4 @@
 const select = $('#js-lang-select');
-// const langVal = select.val();
 
 const uiData = {
   ru: {
@@ -34,19 +33,34 @@ const projectDescTitle = $('#js-desc-title');
 const projectDescText = $('#js-desc-text');
 const authorOfTheDayTitle = $('#js-day-author-title');
 
-function renderUI() {
-  const selectLang = $('#js-lang-select');
-  const lang = selectLang.val();
-  homeLink.text(uiData[lang].home);
-  teamLink.text(uiData[lang].team);
-  authorsLink.text(uiData[lang].authors);
-  projectDescTitle.text(uiData[lang].description_title);
-  projectDescText.text(uiData[lang].description_text);
-  authorOfTheDayTitle.text(uiData[lang].author_of_the_day);
+function setUiValues(value) {
+  homeLink.text(uiData[value].home);
+  teamLink.text(uiData[value].team);
+  authorsLink.text(uiData[value].authors);
+  projectDescTitle.text(uiData[value].description_title);
+  projectDescText.text(uiData[value].description_text);
+  authorOfTheDayTitle.text(uiData[value].author_of_the_day);
 }
+
+function renderUI() {
+  let language = '';
+  if (localStorage.getItem('lang')) {
+    language = localStorage.getItem('lang');
+    $(`option[value=${language}]`).attr('selected', 'selected');
+    setUiValues(language);
+  } else {
+    const selectLang = $('#js-lang-select');
+    language = selectLang.val();
+    setUiValues(language);
+  }
+}
+
 renderUI();
 
-select.change(renderUI);
+select.change(() => {
+  localStorage.setItem('lang', select.val());
+  renderUI();
+});
 
 $(() => {
   (() => {
