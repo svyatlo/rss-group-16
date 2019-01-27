@@ -17,42 +17,40 @@
 <body>
   <div class="container">
     <header class="header">
-      <nav>
-        <ul class="nav justify-content-center">
+      <nav class="row justify-content-center header__nav">
+        <ul class="nav header__nav-list  col-4">
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Главная</a>
+            <a class="nav-link disabled" id="js-nav-home" href="#" tabindex="-1" aria-disabled="true">Главная</a>
           </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./team.html">Команда</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./authors.html">Фотографы</a>
+            <a class="nav-link" id="js-nav-team" href="./team.html">Команда</a>
           </li>
-          <li>
+          <li class="nav-item">
+            <a class="nav-link" id="js-nav-authors" href="./authors.html">Фотографы</a>
           </li>
-          <select class="custom-select col-3">
-            <option value="ru" selected>RU</option>
-            <option value="by">BY</option>
-            <option value="eng">ENG</option>
-          </select>
         </ul>
+        <select class="custom-select header__nav-select col-2" id="js-lang-select">
+          <option value="ru">RU</option>
+          <option value="by" selected>BY</option>
+          <option value="eng">ENG</option>
+        </select>
       </nav>
 
 
     </header>
     <div class="row">
-      <div class="description">
-        <h1>Описание проекта</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt vel ex sunt, totam dicta
-          animi perspiciatis facilis veniam. Quos magni culpa perspiciatis in. Modi maxime deleniti reiciendis?
-          Fugiat accusamus architecto illo alias tenetur quod hic, repellat ipsam suscipit iusto facere voluptates
-          quos unde itaque, harum animi impedit nam. Aperiam!</p>
+      <div class="description" id="js-desc">
+        <h1 class="description__title" id="js-desc-title">Описание проекта</h1>
+        <p class="description__text" id="js-desc-text"></p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt vel ex sunt, totam dicta animi perspiciatis facilis veniam. Quos magni culpa perspiciatis in. Modi maxime deleniti reiciendis? Fugiat accusamus architecto illo alias tenetur quod hic, repellat ipsam suscipit iusto facere voluptates quos unde itaque, harum animi impedit nam. Aperiam!
+        </p>
       </div>
     </div>
 
     <article class="author-of-the-day col-12">
-      <h2 class="author-of-the-day__title">Фотограф дня</h2>
+      <h2 class="author-of-the-day__title" id="js-day-author-title">Фотограф дня</h2>
       <div class="row">
         <div class="author-of-the-day__photo col-12 col-sm-6 col-lg-2" id="js-author-pic">
           <img class="author-of-the-day__pic rounded" src="https://placeimg.com/300/300/people"  id="js-author-pic">
@@ -72,6 +70,7 @@
 
   </div>
   <script src="./scripts/main.js"></script>
+  <script src="./scripts/data.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 
