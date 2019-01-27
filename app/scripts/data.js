@@ -1,5 +1,6 @@
 const data = [
   {
+    id: '1',
     name: 'Ян Брунон Булгак',
     mainPhoto: './images/bulgak/main_photo01.jpg',
     dateOfBirth: '6 октября 1876 г.',
@@ -80,128 +81,129 @@ const data = [
     ],
     imagesArray: [
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img01.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img02.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img03.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img04.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img05.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img06.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img07.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img08.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img09.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img10.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img11.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img12.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img13.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img14.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img15.jpg',
       },
       {
-        description: 'image',
+        description: 'Фото из серии «Арки Вильнюса»',
         src: './images/bulgak/img16.jpg',
       },
       {
-        description: 'image',
+        description: 'Кревский замок',
         src: './images/bulgak/img17.jpg',
       },
       {
-        description: 'image',
+        description: 'Мирский замок',
         src: './images/bulgak/img18.jpg',
       },
       {
-        description: 'image',
+        description: 'Мирский замок',
         src: './images/bulgak/img19.jpg',
       },
       {
-        description: 'image',
+        description: 'Мирский замок',
         src: './images/bulgak/img20.jpg',
       },
       {
-        description: 'image',
+        description: 'Замок в Несвиже',
         src: './images/bulgak/img21.jpg',
       },
       {
-        description: 'image',
+        description: 'Несвиж, вид перед 1939 г.',
         src: './images/bulgak/img22.jpg',
       },
       {
-        description: 'image',
+        description: 'Новогрудок',
         src: './images/bulgak/img23.jpg',
       },
       {
-        description: 'image',
+        description: 'Новогрудок',
         src: './images/bulgak/img24.jpg',
       },
       {
-        description: 'image',
+        description: 'Гродно',
         src: './images/bulgak/img25.jpg',
       },
       {
-        description: 'image',
+        description: 'Гродно',
         src: './images/bulgak/img26.jpg',
       },
       {
-        description: 'image',
+        description: 'Гродно',
         src: './images/bulgak/img27.jpg',
       },
       {
-        description: 'image',
+        description: 'Гродно. Костел и монастырь.',
         src: './images/bulgak/img28.jpg',
       },
       {
-        description: 'image',
+        description: 'Гродно',
         src: './images/bulgak/img29.jpg',
       },
       {
-        description: 'image',
+        description: 'Пинскю Иезуитский коллегиум',
         src: './images/bulgak/img30.jpg',
       },
     ],
   },
   {
+    id: '2',
     name: 'Лев Урбанович Дашкевич',
     mainPhoto: './images/dashkevich/main_photo01.jpg',
     dateOfBirth: '12 февраля 1882 г.',
@@ -281,56 +283,57 @@ const data = [
     ],
     imagesArray: [
       {
-        description: 'image',
+        description: 'Архикафедральный собор Пресвятой Девы Марии',
         src: './images/dashkevich/img01.jpg',
       },
       {
-        description: 'image',
+        description: 'Минск. Вид на Верхний Город. 1920—1930-е гг',
         src: './images/dashkevich/img02.jpg',
       },
       {
-        description: 'image',
+        description: 'Портрет жены. Ереван. 1912—1913 гг',
         src: './images/dashkevich/img03.jpg',
       },
       {
-        description: 'image',
+        description: 'Тихая ночь. 1935 г',
         src: './images/dashkevich/img04.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Лев Дашкевич',
         src: './images/dashkevich/img05.jpg',
       },
       {
-        description: 'image',
+        description: 'В кустарной никелированной мастерской Левандовского, которая располагалась на ул. Красноармейской, 13. Минск. 1920-е гг.',
         src: './images/dashkevich/img06.jpg',
       },
       {
-        description: 'image',
+        description: 'В одном из цехов Минского механического завода. 1930-е гг',
         src: './images/dashkevich/img07.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Лев Дашкевич',
         src: './images/dashkevich/img08.jpg',
       },
       {
-        description: 'image',
+        description: 'Тихая ночь. 1935 г',
         src: './images/dashkevich/img09.jpg',
       },
       {
-        description: 'image',
+        description: 'Минск. Интерьер церкви на Архиерейском подворье. 1923 г',
         src: './images/dashkevich/img10.jpg',
       },
       {
-        description: 'image',
+        description: 'Минск. Кожевенный завод «Большевик» в Ляховке. 1920—1929 гг',
         src: './images/dashkevich/img11.jpg',
       },
       {
-        description: 'image',
+        description: 'Минск. Строительство жилого дома на 73 квартиры, угол улиц Комсомольской и Карла Маркса. 1930 г',
         src: './images/dashkevich/img12.jpg',
       },
     ],
   },
   {
+    id: '3',
     name: 'Cофья Хоментовская',
     mainPhoto: './images/homentovskaya/main_photo01.jpg',
     dateOfBirth: '8 декабря 1902 г.',
@@ -420,88 +423,89 @@ const data = [
     ],
     imagesArray: [
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img01.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img02.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img03.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img04.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img05.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img06.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img07.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img08.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img09.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img10.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img11.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img12.jpg',
       },
       {
-        description: 'image',
+        description: 'На Полесье. 1930-1939 гг',
         src: './images/homentovskaya/img13.jpg',
       },
       {
-        description: 'image',
+        description: 'Площадь Трех крестов. Варшава. 1945 г.',
         src: './images/homentovskaya/img14.jpg',
       },
       {
-        description: 'image',
+        description: 'Маникюр, педикюр. Варшава. 1945 г',
         src: './images/homentovskaya/img15.jpg',
       },
       {
-        description: 'image',
+        description: 'Пинск. Собор и рыночная площадь. 1930-1939 гг',
         src: './images/homentovskaya/img16.jpg',
       },
       {
-        description: 'image',
+        description: 'Полесская женщина. 1936 г.',
         src: './images/homentovskaya/img17.jpg',
       },
       {
-        description: 'image',
+        description: 'На реке Пина. 1930-1937 гг',
         src: './images/homentovskaya/img18.jpg',
       },
       {
-        description: 'image',
+        description: '«Кафе Зофьи Потоцкой в Варшаве», 1946 г',
         src: './images/homentovskaya/img19.jpg',
       },
       {
-        description: 'image',
+        description: 'Варшава. 1945 г',
         src: './images/homentovskaya/img20.jpg',
       },
     ],
   },
   {
+    id: '4',
     name: 'Валерий Дмитриевич Лобко',
     mainPhoto: './images/lobko/main_photo01.jpg',
     dateOfBirth: '12 июля 1951 г.',
@@ -582,80 +586,81 @@ const data = [
     ],
     imagesArray: [
       {
-        description: 'image',
+        description: 'Портрет Татьяны Шеметовец',
         src: './images/lobko/img01.jpg',
       },
       {
-        description: 'image',
+        description: 'Из серии «Полесье»',
         src: './images/lobko/img02.jpg',
       },
       {
-        description: 'image',
+        description: 'Из серии «Полесье»',
         src: './images/lobko/img03.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img04.jpg',
       },
       {
-        description: 'image',
+        description: 'Из серии «Завтрашняя фотография»',
         src: './images/lobko/img05.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img06.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img07.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img08.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img09.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img10.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img11.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img12.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img13.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img14.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img15.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img16.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img17.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Валерий Лобко',
         src: './images/lobko/img18.jpg',
       },
     ],
   },
   {
+    id: '5',
     name: 'Бенедикт Генрих Тышкевич',
     mainPhoto: './images/tyshkevich/main_photo01.jpg',
     dateOfBirth: '1852 г',
@@ -664,6 +669,7 @@ const data = [
       coordinate: [54.6462, 25.3570],
     },
     keyWords: ['Бенедикт', 'Тышкевич', '1852', 'Немеж', 'Ковно', 'Раудондварис', 'Каунас', 'путешественник', 'фотограф', 'граф', 'Франция'],
+    generalInfo: 'Беларускі фатограф. Адзін з пачынальнікаў мастацкай фатаграфіі ў Беларусі. Па сьмерці бацькоў, з 8-гадовага ўзросту, Бэнэдыкта выхоўваў дзед — Бэнэдыкт Тышкевіч (1801—1866).У 1874 годзе ў Бостане Бэнэдыкт ажаніўся з Кларай Эльжбэтай Бэнкрафт. У 1876 годзе Тышкевіч на ўласнай яхце «Жамайтыя» выправіўся ў Філадэлфію на прамысловую выставу, дзе прэзэнтаваў свае фатапрацы, за якія быў уганараваны залатым мэдалём. Пазьней яго працы былі адзначаныя мэдалямі на выставах у Польшчы (1894) і Бэрліне (1899). Тышкевіч быў чальцом парыскага фатаклюбу.',
     videosArray: [
       {
         link: 'https://www.youtube.com/embed/53vi7zTGkAE?html5=1',
@@ -676,91 +682,91 @@ const data = [
     ],
     imagesArray: [
       {
-        description: 'image',
+        description: 'Женский портрет',
         src: './images/tyshkevich/img01.jpg',
       },
       {
-        description: 'image',
+        description: 'Граф Александр Тышкевич, родственник Бенедикта Тышкевича, во время светской беседы в одном из польских салонов в 1898 г.',
         src: './images/tyshkevich/img02.jpg',
       },
       {
-        description: 'image',
+        description: 'Автопортрет',
         src: './images/tyshkevich/img03.jpg',
       },
       {
-        description: 'image',
+        description: 'Автопортрет',
         src: './images/tyshkevich/img04.jpg',
       },
       {
-        description: 'image',
+        description: 'Автопортрет Тышкевича с охотничьими трофеями.',
         src: './images/tyshkevich/img05.jpg',
       },
       {
-        description: 'image',
+        description: 'Граф Бенедикт Тышкевич',
         src: './images/tyshkevich/img06.jpg',
       },
       {
-        description: 'image',
+        description: 'Строительство фотолаборатории в с. Вялое',
         src: './images/tyshkevich/img07.jpg',
       },
       {
-        description: 'image',
+        description: 'Крестьяне во время праздника в с. Вялое',
         src: './images/tyshkevich/img08.jpg',
       },
       {
-        description: 'image',
+        description: 'Семейный автопортрет, 90-е гг ХIХ в. Справа старший сын Джон Бенедикт',
         src: './images/tyshkevich/img09.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Бенедикт Тышкевич',
         src: './images/tyshkevich/img10.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Бенедикт Тышкевич',
         src: './images/tyshkevich/img11.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Бенедикт Тышкевич',
         src: './images/tyshkevich/img12.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Бенедикт Тышкевич',
         src: './images/tyshkevich/img13.jpg',
       },
       {
-        description: 'image',
+        description: 'Автор: Бенедикт Тышкевич',
         src: './images/tyshkevich/img14.jpg',
       },
       {
-        description: 'image',
+        description: 'Женский портрет',
         src: './images/tyshkevich/img15.jpg',
       },
       {
-        description: 'image',
+        description: 'Женский портрет',
         src: './images/tyshkevich/img16.jpg',
       },
       {
-        description: 'image',
+        description: 'Женский портрет',
         src: './images/tyshkevich/img17.jpg',
       },
       {
-        description: 'image',
+        description: 'Женский портрет',
         src: './images/tyshkevich/img18.jpg',
       },
       {
-        description: 'image',
+        description: 'Женский портрет',
         src: './images/tyshkevich/img19.jpg',
       },
       {
-        description: 'image',
+        description: 'Портрет дочери Элизабеты Марии Тышкевич.',
         src: './images/tyshkevich/img20.jpg',
       },
       {
-        description: 'image',
+        description: 'Портрет дочери Элизабеты Марии Тышкевич.',
         src: './images/tyshkevich/img21.jpg',
       },
       {
-        description: 'image',
+        description: 'Портрет сына Джона Бенедикта.',
         src: './images/tyshkevich/img22.jpg',
       },
     ],

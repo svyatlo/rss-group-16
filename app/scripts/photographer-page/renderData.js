@@ -51,7 +51,7 @@ function renderData(profile) {
     profile.imagesArray.forEach((element) => {
       const galleryItemTemplate = `
       <a href=${element.src} class="js-gallery-item">
-        <img src=${element.src} alt=${element.description} title=${element.description} class="js-gallery-item-image"/>
+        <img src=${element.src} alt="${element.description}" title="${element.description}" class="js-gallery-item-image"/>
       </a>`;
       $('.js-gallery').append(galleryItemTemplate);
     });
