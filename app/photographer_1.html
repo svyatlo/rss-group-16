@@ -151,7 +151,7 @@
     profiles[0].periodsOfLifeArray.forEach(element => {
       const timelineItemTemplate = `
       <div class="cd-timeline__block js-cd-block">
-        <div class="cd-timeline__img cd-timeline__img--picture js-cd-img"></div>
+        <div class="cd-timeline__img cd-timeline__img--fact js-cd-img"></div>
         <div class="cd-timeline__content js-cd-content">
           <h2 class="js-cd-content-title"> ${element.fact} </h2>
           <p class="js-cd-content-description"> ${element.additional} </p>
@@ -160,7 +160,6 @@
       </div>`;
       $('.cd-timeline__container').append(timelineItemTemplate);
     });
-    
   </script>
 </body>
 

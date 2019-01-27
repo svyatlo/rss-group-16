@@ -130,16 +130,8 @@ Vertical Timeline - by CodyHouse.co
   margin-top: -12px;
 }
 
-.cd-timeline__img.cd-timeline__img--picture {
-  background: #66a8ce;
-}
-
-.cd-timeline__img.cd-timeline__img--movie {
-  background: #c03b44;
-}
-
-.cd-timeline__img.cd-timeline__img--location {
-  background: #f0ca45;
+.cd-timeline__img.cd-timeline__img--fact {
+  background: #a81d1d;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -295,7 +287,7 @@ Vertical Timeline - by CodyHouse.co
     position: absolute;
     width: 100%;
     left: 122%;
-    top: 6px;
+    top: -10px;
     font-size: 1.6rem;
   }
   .cd-timeline__block:nth-child(even) .cd-timeline__content {
