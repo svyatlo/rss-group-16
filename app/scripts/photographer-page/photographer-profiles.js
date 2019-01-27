@@ -1,7 +1,7 @@
 const profiles = [{
   name: 'Бенедикт Генрих Тышкевич',
   mainPhoto: 'https://www.legitkvs.com/images/testimonial_1.jpg',
-  // mainPhoto: '../../../data/tyshkevich/images/main_photo01.jpg',
+  // mainPhoto: '',
   dateOfBirth: 1852,
   placeOfBirth: {
     city: 'Немеж',
