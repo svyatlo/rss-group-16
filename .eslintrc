@@ -12,5 +12,7 @@
     "jquery"
   ],
   "rules": {
+    "no-plusplus":"off",
+    "no-unused-vars":"off"
   }
 }

@@ -28,7 +28,7 @@ gulp.task('sass', () => gulp.src('app/scss/**/*.scss')
     stream: true,
   })));
 
-gulp.task('lint', () => gulp.src(['app/scripts/*.js', '!app/scripts/bootstrap.min.js', '!app/scripts/jquery.min.js', '!app/scripts/popper.min.js', '!node_modules', '!gulpfile.js'])
+gulp.task('lint', () => gulp.src(['app/scripts/*.js', '!app/scripts/bootstrap.min.js', '!app/scripts/jquery.min.js', '!app/scripts/popper.min.js', '!node_modules', '!gulpfile.js', '!app/scripts/photographer-page/simple-lightbox.js'])
   .pipe(eslint())
   .pipe(eslint.format()));
 
