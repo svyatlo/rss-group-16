@@ -12,7 +12,6 @@
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
    crossorigin=""></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -45,25 +44,25 @@
   </div>
   <main>
     <section class="container mt-5 text-center js-photographer">
-      <h1 class="js-photographer-name">Photographer name</h1>
+      <h1 class="js-photographer-name"></h1>
       <img src="" class="rounded js-photographer-photo" alt="photographer-photo">
     </section>
     <section class="container cd-timeline js-cd-timeline">
       <div class="cd-timeline__container"></div>
     </section>
-    <section class="container mt-5">
+    <section class="container mt-5 js-works">
       <h3 class="">Works section</h3>
       <div>
         <ul class="list-group list-group-flush js-list-of-works">
         </ul>
       </div>
     </section>
-    <section class="container mt-5">
+    <section class="container mt-5 gallery js-gallery-container">
       <h3 class="">Gallery section</h3>
       <div class="gallery js-gallery">
       </div>
     </section>
-    <section class="container mt-5">
+    <section class="container mt-5 js-video-container">
       <h3 class="">Video section</h3>
       <div class="list-group-container">
         <ul class="list-group list-group-flush js-videos">
@@ -82,66 +81,20 @@
           </div>
         </div>
     </section>
-    <section class="container mt-5" style="height: 500px;">
+    <section class="container mt-5 js-map-container">
       <h3 class="mx-1">Map section</h3>
       <div id="mapid" class="h-100"></div>
     </section>
   </main>
   <script src="./scripts/photographer-page/timeline.js"></script>
   <script src="./scripts/photographer-page/video-overlay.js"></script>
-  <script src="./scripts/photographer-page/display-map.js"></script>
   <script src="./scripts/photographer-page/photographer-profiles.js"></script>
-  <script>
-    document.title = profiles[0].name;
-    $('.js-photographer-name').text(profiles[0].name);
-
-    const mainPhoto = document.querySelector('.js-photographer-photo');
-    mainPhoto.src = profiles[0].mainPhoto;
-
-    profiles[0].periodsOfLifeArray.forEach(element => {
-      const timelineItemTemplate = `
-      <div class="cd-timeline__block js-cd-block">
-        <div class="cd-timeline__img cd-timeline__img--fact js-cd-img"></div>
-        <div class="cd-timeline__content js-cd-content">
-          <h2 class="js-cd-content-title">${element.fact}</h2>
-          <p class="js-cd-content-description">${element.additional}</p>
-          <span class="cd-timeline__date">${element.date}</span>
-        </div>
-      </div>`;
-      $('.cd-timeline__container').append(timelineItemTemplate);
-    });
-
-    profiles[0].worksArray.forEach(element => {
-      const workItemTemplate = `
-      <li class="list-group-item js-list-of-works-item">
-        <h3 class="js-list-of-works-item-title">${element.name}</h3>
-        <p class="js-list-of-works-item-description">${element.description}</p>
-      </li>`;
-      $('.js-list-of-works').append(workItemTemplate);
-    });
-
-    profiles[0].imagesArray.forEach(element => {
-      const galleryItemTemplate = `
-      <a href=${element.src} class="js-gallery-item">
-        <img src=${element.src} alt=${element.description} title=${element.description} class="js-gallery-item-image"/>
-      </a>`;
-      $('.js-gallery').append(galleryItemTemplate);
-    });
-    $('.js-gallery').append(`<div class="clear"></div>`);
-
-    profiles[0].videosArray.forEach(element => {
-      const videoItemTemplate = `
-      <li class="list-group-item js-videos-item">
-        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo=${element.link}">${element.subscribe}</a>
-      </li>
-      `;
-      $('.js-videos').append(videoItemTemplate);
-    });
-
-
-  </script>
   <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox.js"></script>
   <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox-controller.js"></script>
+  <script type="text/javascript" src="./scripts/photographer-page/renderData.js"></script>
+  <script>
+    renderData(profiles[0]);
+  </script>
 </body>
 
 </html>

@@ -1,8 +1,12 @@
 const profiles = [{
   name: 'Бенедикт Генрих Тышкевич',
   mainPhoto: 'https://www.legitkvs.com/images/testimonial_1.jpg',
+  // mainPhoto: '../../../data/tyshkevich/images/main_photo01.jpg',
   dateOfBirth: 1852,
-  placeOfBirth: 'Немеж (совр. Литва)',
+  placeOfBirth: {
+    city: 'Немеж',
+    coordinate: [54.6462, 25.3570],
+  },
   keyWords: ['Бенедикт', 'Тышкевич', '1852', 'Немеж', 'Ковно', 'Раудондварис', 'Каунас', 'путешественник', 'фотограф', 'граф', 'Франция'],
   videosArray: [
     {
