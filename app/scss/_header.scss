@@ -2,10 +2,11 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
+.header__nav{
+  justify-content: space-between !important;
+}
 .header__nav-list {
   min-width: 350px;
-  margin-left: auto;
 }
 
 .header__nav-select {
