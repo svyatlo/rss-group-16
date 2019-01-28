@@ -22,9 +22,9 @@ createTable.innerHTML = `
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">ФИО</th>
-      <th scope="col">Дата рождения</th>
-      <th scope="col">Место Рождения</th>
+      <th id='table-fullname' scope="col">ФИО</th>
+      <th id='table-dateOfBirth' scope="col">Дата рождения</th>
+      <th id='table-placeOfBirth' scope="col">Место Рождения</th>
     </tr>
   </thead>
   ${body}`;
