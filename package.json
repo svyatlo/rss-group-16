@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dzmitry Yarash, Simashchanka Pavel, Pavel Miatlitski, Sviatlana Tamashevich",
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
