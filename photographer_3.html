@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="row justify-content-center header__nav">
+          <ul class="nav header__nav-list  col-4">
+            <li class="nav-item">
+              <a class="nav-link" id="js-nav-home" href="./index.html" tabindex="-1" aria-disabled="true">Главная</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="js-nav-team" href="./team.html">Команда</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="js-nav-authors" href="./authors.html">Фотографы</a>
+            </li>
+          </ul>
+          <select class="custom-select header__nav-select col-2" id="js-lang-select">
+            <option value="ru">RU</option>
+            <option value="by" selected>BY</option>
+            <option value="eng">ENG</option>
+          </select>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="container mt-5 text-center js-photographer">
+        <h1 class="js-photographer-name mb-4"></h1>
+        <img src="" class="rounded js-photographer-photo w-30" alt="photographer-photo">
+      </section>
+      <section class="container cd-timeline js-cd-timeline">
+        <div class="cd-timeline__container"></div>
+      </section>
+      <section class="container mt-5 js-works">
+        <h3 class="" id="js-works-title">Works section</h3>
+        <div>
+          <ul class="list-group list-group-flush js-list-of-works">
+          </ul>
+        </div>
+      </section>
+      <section class="container mt-5 gallery js-gallery-container">
+        <h3 class="" id="js-gallery-title">Gallery section</h3>
+        <div class="gallery js-gallery">
+        </div>
+      </section>
+      <section class="container mt-5 js-video-container">
+        <h3 class="" id="js-video-title">Video section</h3>
+        <div class="list-group-container">
+          <ul class="list-group list-group-flush js-videos">
+          </ul>
+        </div>
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div>
+                    <iframe width="100%" height="350" src=""></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="container mt-5 js-map-container">
+        <h3 class="mx-1" id="js-map-title">Map section</h3>
+        <div id="mapid" class="h-100"></div>
+      </section>
+    </main>
+    <script src="./scripts/photographer-page/timeline.js"></script>
+    <script src="./scripts/photographer-page/video-overlay.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox.js"></script>
+    <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox-controller.js"></script>
+    <script type="text/javascript" src="./scripts/photographer-page/renderData.js"></script>
+    <script type="text/javascript" src="./scripts/header.js"></script>
+    <script>
+      const currentProfile = data[2];
+      renderData(currentProfile);
+    </script>
+  </body>
+</html>
