@@ -2,11 +2,9 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-
-.header__nav {
+.header__nav{
   justify-content: space-between !important;
 }
-
 .header__nav-list {
   min-width: 350px;
 }
@@ -18,12 +16,13 @@
 }
 
 @media (max-width: 768px) {
-  .header__nav-list {
+  .header__nav-list{
     display: flex;
     justify-content: center;
     min-width: 100%;
+
   }
-  .header__nav-select {
+  .header__nav-select{
     margin: 1rem auto 0 auto;
   }
 }
