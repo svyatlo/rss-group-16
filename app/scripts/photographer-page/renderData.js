@@ -77,8 +77,9 @@ function renderData(profile) {
       accessToken: 'pk.eyJ1Ijoiem0xdHJ5IiwiYSI6ImNqcmRwa2c3eTBrZWk0OXBvdnNlZGZqbHAifQ.4--wklrVhxA5gT6y4QM5RQ',
     }).addTo(mymap);
 
-    L.marker(profile.placeOfBirth.coordinate).addTo(mymap).bindPopup(`${profile.name}`).openPopup();
+    L.marker(profile.placeOfBirth.coordinate).addTo(mymap).bindPopup('', { minWidth: 60 }).openPopup();
     const mapPopupText = $('.leaflet-popup-content')[0];
+    mapPopupText.classList.add('text-center');
     mapPopupText.id = 'js-popup-text';
   } else {
     $('.js-map-container').remove();

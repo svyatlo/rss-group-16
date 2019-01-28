@@ -12,7 +12,7 @@ $(() => {
       gallery_section_title: 'Галерея',
       video_section_title: 'Видео',
       map_section_title: 'Значимые места',
-      map_popup_text: 'родился здесь',
+      map_popup_text: 'Место рождения',
       seach_label: 'Поиск по имени, дате или месту рождения',
       seach_input: 'Введите запрос',
     },
@@ -27,7 +27,7 @@ $(() => {
       gallery_section_title: 'Галерэя',
       video_section_title: 'Відэа',
       map_section_title: 'Значныя месцы',
-      map_popup_text: 'нарадзіўся тут',
+      map_popup_text: 'Месца нараджэння',
       seach_label: 'Пошук па імені, даце альбо месцы нараджэння',
       seach_input: 'Увядзіце запыт',
     },
@@ -42,7 +42,7 @@ $(() => {
       gallery_section_title: 'Gallery',
       video_section_title: 'Video',
       map_section_title: 'Significant places',
-      map_popup_text: 'was born here',
+      map_popup_text: 'Place of birth',
       seach_label: 'Search by name, place or date of birth',
       seach_input: 'Enter your request',
     },
@@ -74,7 +74,7 @@ $(() => {
     mapSecTitle.text(uiData[value].map_section_title);
     searchLabel.text(uiData[value].seach_label);
     searchInput.attr('placeholder', uiData[value].seach_input);
-    mapPopupText.text(`${$('.js-photographer-name').text()} ${uiData[value].map_popup_text}`);
+    mapPopupText.text(`${uiData[value].map_popup_text}`);
   }
 
   function renderUI() {
