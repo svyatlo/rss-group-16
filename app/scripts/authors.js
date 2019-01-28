@@ -80,7 +80,7 @@ createTable.innerHTML = `
 container.appendChild(createTable);
 
 function tableSearch() {
-  const phrase = document.getElementById('search-text');
+  const phrase = document.getElementById('js-search-input');
   const table = document.getElementById('info-table');
   const regPhrase = new RegExp(phrase.value, 'i');
   let flag = false;
@@ -98,6 +98,6 @@ function tableSearch() {
   }
 }
 
-document.querySelector('#search-text').addEventListener('keyup', () => {
+document.querySelector('#js-search-input').addEventListener('keyup', () => {
   tableSearch();
 });
