@@ -58,7 +58,7 @@ function renderData(profile) {
     profile.videosArray.forEach((element) => {
       const videoItemTemplate = `
       <li class="list-group-item js-videos-item">
-        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo=${element.link}">${element.subscribe}</a>
+        <a href="#" class="" data-toggle="modal" data-target="#videoModal" data-theVideo=${element.link}">${element.subscribe}</a>
       </li>
       `;
       $('.js-videos').append(videoItemTemplate);
