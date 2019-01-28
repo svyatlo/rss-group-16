@@ -1,5 +1,4 @@
 $(() => {
-  // eslint-disable-next-line no-undef
   const infoArray = data;
   const randomNum = (min, max) => {
     let rand = min - 0.5 + Math.random() * (max - min + 1);

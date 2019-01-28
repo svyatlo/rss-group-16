@@ -72,10 +72,10 @@ $(() => {
   const searchLabel = $('#js-search-label');
   const searchInput = $('#js-search-input');
   const mapPopupText = $('#js-popup-text');
-  const table_fullname_text = $('#table-fullname');
-  const table_dateOfBirth_text = $('#table-dateOfBirth');
-  const table_placeOfBirth_text = $('#table-placeOfBirth');
-  const link_more_text = $('#link-more');
+  const tableFullnameText = $('#table-fullname');
+  const tableDateOfBirthText = $('#table-dateOfBirth');
+  const tablePlaceOfBirthText = $('#table-placeOfBirth');
+  const linkMoreText = $('#link-more');
 
   function setUiValues(value) {
     homeLink.text(uiData[value].home);
@@ -91,10 +91,10 @@ $(() => {
     searchLabel.text(uiData[value].seach_label);
     searchInput.attr('placeholder', uiData[value].seach_input);
     mapPopupText.text(`${uiData[value].map_popup_text}`);
-    table_fullname_text.text(uiData[value].table_fullname);
-    table_dateOfBirth_text.text(uiData[value].table_dateOfBirth);
-    table_placeOfBirth_text.text(uiData[value].table_placeOfBirth);
-    link_more_text.text(uiData[value].link_more);
+    tableFullnameText.text(uiData[value].table_fullname);
+    tableDateOfBirthText.text(uiData[value].table_dateOfBirth);
+    tablePlaceOfBirthText.text(uiData[value].table_placeOfBirth);
+    linkMoreText.text(uiData[value].link_more);
   }
 
   function renderUI() {
