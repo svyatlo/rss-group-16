@@ -77,10 +77,9 @@ function renderData(profile) {
       accessToken: 'pk.eyJ1Ijoiem0xdHJ5IiwiYSI6ImNqcmRwa2c3eTBrZWk0OXBvdnNlZGZqbHAifQ.4--wklrVhxA5gT6y4QM5RQ',
     }).addTo(mymap);
 
-    if (!localStorage.getItem('lang')) {
-      localStorage.setItem('lang', 'by');
-    }
-    L.marker(profile.placeOfBirth.coordinate).addTo(mymap).bindPopup(`${profile.name} ${uiData[localStorage.getItem('lang')].map_popup_text}`).openPopup();
+    L.marker(profile.placeOfBirth.coordinate).addTo(mymap).bindPopup(`${profile.name}`).openPopup();
+    const mapPopupText = $('.leaflet-popup-content')[0];
+    mapPopupText.id = 'js-popup-text';
   } else {
     $('.js-map-container').remove();
   }

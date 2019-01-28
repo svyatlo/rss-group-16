@@ -59,6 +59,7 @@ $(() => {
   const mapSecTitle = $('#js-map-title');
   const searchLabel = $('#js-search-label');
   const searchInput = $('#js-search-input');
+  const mapPopupText = $('#js-popup-text');
 
   function setUiValues(value) {
     homeLink.text(uiData[value].home);
@@ -73,6 +74,7 @@ $(() => {
     mapSecTitle.text(uiData[value].map_section_title);
     searchLabel.text(uiData[value].seach_label);
     searchInput.attr('placeholder', uiData[value].seach_input);
+    mapPopupText.text(`${currentProfile.name} ${uiData[value].map_popup_text}`);
   }
 
   function renderUI() {
