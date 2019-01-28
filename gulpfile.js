@@ -3,13 +3,11 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const wait = require('gulp-wait');
 const browserSync = require('browser-sync');
-// const rename = require('gulp-rename');
 const del = require('del');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cache = require('gulp-cache');
 const autoprefixer = require('gulp-autoprefixer');
-// const uncss = require('gulp-uncss');
 const plumber = require('gulp-plumber');
 const sourcemaps = require('gulp-sourcemaps');
 const eslint = require('gulp-eslint');
@@ -63,8 +61,6 @@ gulp.task('img', () => gulp.src('app/images/**/*')
 gulp.task('build', ['clean', 'img', 'sass'], () => {
   const buildCss = gulp.src('app/css/*.css')
     .pipe(gulp.dest('dist/css'));
-  const buildFonts = gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'));
   const buildImages = gulp.src('app/images/**/*')
     .pipe(gulp.dest('dist/images'));
   const buildHtml = gulp.src('app/*.html')

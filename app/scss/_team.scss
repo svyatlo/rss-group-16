@@ -1,22 +1,9 @@
-.team__wrapper{
-  justify-content: center;
-}
 .team__member-wrap {
   flex-basis: 300px;
-  min-width: 17rem;
+  min-width: 25rem;
   margin-top: 1rem;
 }
 
 .card-title {
   word-wrap: normal;
-}
-
-@media (max-width: 1200px) {
-  .team__member-wrap {
-    min-width: 25rem;
-  }
-}
-
-@media (max-width: 992px) {
-  
 }
