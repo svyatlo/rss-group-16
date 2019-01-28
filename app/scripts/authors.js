@@ -1,68 +1,19 @@
-const arrPhotograph = [
-  {
-    name: 'Анастасия Шпагина',
-    date: '1993',
-    city: 'Одесса',
-    link: './photographer_1.html',
-    id: '01',
-  },
-  {
-    name: 'Николай Соболев ',
-    date: '1983',
-    city: 'Санкт-Петербург',
-    link: './photographer_2.html',
-    id: '02',
-  },
-  {
-    name: 'Иванов Иван Иванович ',
-    date: '1575',
-    city: 'Minsk',
-    link: './photographer_3.html',
-    id: '03',
-  },
-  {
-    name: 'Сидоров Сидор Сидорович',
-    date: '637',
-    city: 'Gomel',
-    link: './photographer_4.html',
-    id: '04',
-  },
-  {
-    name: 'Александров Александр Александрович',
-    date: '1347',
-    city: 'брайтенбитч',
-    link: './photographer_5.html',
-    id: '05',
-  },
-  {
-    name: 'Горбачев Александр Александрович',
-    date: '1347',
-    city: 'Петербург',
-    link: './photographer_6.html',
-    id: '06',
-  },
-  {
-    name: 'Горбачев Александр Александрович',
-    date: '1347',
-    city: 'Петербург',
-    link: './photographer_7.html',
-    id: '07',
-  }];
-
 const container = document.querySelector('.container');
 const createTable = document.createElement('table');
 createTable.id = 'info-table';
 createTable.classList.add('table');
 createTable.classList.add('table-striped');
 
+const currentProfile = data;
+
 let body = '';
-arrPhotograph.forEach((element, i) => {
+currentProfile.forEach((element, i) => {
   body += `
     <tr class="authorNumber_${element.id}">
       <th scope="row">${i + 1}</th>
-      <td><a class="link" href="${element.link}">${element.name}</a></td>
-      <td>${element.date}</td>
-      <td>${element.city}</td>
+      <td><a class="link" href="./photographer_${i + 1}.html">${element.name}</a></td>
+      <td>${element.dateOfBirth}</td>
+      <td>${element.placeOfBirth.city}</td>
     </tr>
   `;
 });
@@ -80,7 +31,7 @@ createTable.innerHTML = `
 container.appendChild(createTable);
 
 function tableSearch() {
-  const phrase = document.getElementById('search-text');
+  const phrase = document.getElementById('js-search-input');
   const table = document.getElementById('info-table');
   const regPhrase = new RegExp(phrase.value, 'i');
   let flag = false;
@@ -98,6 +49,6 @@ function tableSearch() {
   }
 }
 
-document.querySelector('#search-text').addEventListener('keyup', () => {
+document.querySelector('#js-search-input').addEventListener('keyup', () => {
   tableSearch();
 });
