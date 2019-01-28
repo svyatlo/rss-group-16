@@ -15,6 +15,10 @@ $(() => {
       map_popup_text: 'Место рождения',
       seach_label: 'Поиск по имени, дате или месту рождения',
       seach_input: 'Введите запрос',
+      table_fullname: 'ФИО',
+      table_dateOfBirth: 'Дата рождения',
+      table_placeOfBirth: 'Место Рождения',
+      link_more: 'Подробнее',
     },
     by: {
       home: 'Галоўная',
@@ -30,6 +34,10 @@ $(() => {
       map_popup_text: 'Месца нараджэння',
       seach_label: 'Пошук па імені, даце альбо месцы нараджэння',
       seach_input: 'Увядзіце запыт',
+      table_fullname: 'Iмя',
+      table_dateOfBirth: 'Дата нараджэння',
+      table_placeOfBirth: 'Месца нараджэння',
+      link_more: 'Падрабязней',
     },
     eng: {
       home: 'Home',
@@ -45,6 +53,10 @@ $(() => {
       map_popup_text: 'Place of birth',
       seach_label: 'Search by name, place or date of birth',
       seach_input: 'Enter your request',
+      table_fullname: 'Full name',
+      table_dateOfBirth: 'Birth date',
+      table_placeOfBirth: 'Birth place',
+      link_more: 'More info',
     },
   };
   const homeLink = $('#js-nav-home');
@@ -60,6 +72,10 @@ $(() => {
   const searchLabel = $('#js-search-label');
   const searchInput = $('#js-search-input');
   const mapPopupText = $('#js-popup-text');
+  const table_fullname_text = $('#table-fullname');
+  const table_dateOfBirth_text = $('#table-dateOfBirth');
+  const table_placeOfBirth_text = $('#table-placeOfBirth');
+  const link_more_text = $('#link-more');
 
   function setUiValues(value) {
     homeLink.text(uiData[value].home);
@@ -75,6 +91,10 @@ $(() => {
     searchLabel.text(uiData[value].seach_label);
     searchInput.attr('placeholder', uiData[value].seach_input);
     mapPopupText.text(`${uiData[value].map_popup_text}`);
+    table_fullname_text.text(uiData[value].table_fullname);
+    table_dateOfBirth_text.text(uiData[value].table_dateOfBirth);
+    table_placeOfBirth_text.text(uiData[value].table_placeOfBirth);
+    link_more_text.text(uiData[value].link_more);
   }
 
   function renderUI() {
