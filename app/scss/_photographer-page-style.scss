@@ -1,3 +1,21 @@
 .js-map-container {
   height: 500px;
 }
+
+@media only screen and (max-width: 991px) {
+  .js-photographer-photo {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .js-photographer-photo {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .js-photographer-photo {
+    width: 40%;
+  }
+}
