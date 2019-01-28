@@ -20,25 +20,24 @@
 <body>
   <div class="container">
     <header class="header">
-      <nav>
-        <ul class="nav justify-content-center">
+      <nav class="row justify-content-center header__nav">
+        <ul class="nav header__nav-list  col-4">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html">Главная</a>
+            <a class="nav-link" id="js-nav-home" href="./index.html" tabindex="-1" aria-disabled="true">Главная</a>
+          </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./team.html">Команда</a>
+            <a class="nav-link" id="js-nav-team" href="./team.html">Команда</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./authors.html">Фотографы</a>
-          </li>
-          <li>
-            <select class="custom-select">
-              <option value="ru" selected>RU</option>
-              <option value="by">BY</option>
-              <option value="eng">ENG</option>
-            </select>
+            <a class="nav-link" id="js-nav-authors" href="./authors.html">Фотографы</a>
           </li>
         </ul>
+        <select class="custom-select header__nav-select col-2" id="js-lang-select">
+          <option value="ru">RU</option>
+          <option value="by" selected>BY</option>
+          <option value="eng">ENG</option>
+        </select>
       </nav>
     </header>
   </div>
@@ -51,19 +50,19 @@
       <div class="cd-timeline__container"></div>
     </section>
     <section class="container mt-5 js-works">
-      <h3 class="">Works section</h3>
+      <h3 class="" id="js-works-title">Works section</h3>
       <div>
         <ul class="list-group list-group-flush js-list-of-works">
         </ul>
       </div>
     </section>
     <section class="container mt-5 gallery js-gallery-container">
-      <h3 class="">Gallery section</h3>
+      <h3 class="" id="js-gallery-title">Gallery section</h3>
       <div class="gallery js-gallery">
       </div>
     </section>
     <section class="container mt-5 js-video-container">
-      <h3 class="">Video section</h3>
+      <h3 class="" id="js-video-title">Video section</h3>
       <div class="list-group-container">
         <ul class="list-group list-group-flush js-videos">
         </ul>
@@ -82,7 +81,7 @@
         </div>
     </section>
     <section class="container mt-5 js-map-container">
-      <h3 class="mx-1">Map section</h3>
+      <h3 class="mx-1" id="js-map-title">Map section</h3>
       <div id="mapid" class="h-100"></div>
     </section>
   </main>
@@ -92,8 +91,10 @@
   <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox.js"></script>
   <script type="text/javascript" src="./scripts/photographer-page/simple-lightbox-controller.js"></script>
   <script type="text/javascript" src="./scripts/photographer-page/renderData.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
   <script>
-    renderData(data[0]);
+    const currentProfile = data[0];
+    renderData(currentProfile);
   </script>
 </body>
 

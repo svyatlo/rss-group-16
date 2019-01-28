@@ -1,12 +1,6 @@
 function renderData(profile) {
-  if (profile.name) {
-    document.title = profile.name;
-    $('.js-photographer-name').text(profile.name);
-  } else {
-    document.title = 'Безымянный';
-    profile.name = 'Безымянный';
-    $('.js-photographer-name').text('Безымянный');
-  }
+  document.title = profile.name;
+  $('.js-photographer-name').text(profile.name);
 
   if (profile.mainPhoto) {
     const mainPhoto = document.querySelector('.js-photographer-photo');
@@ -83,7 +77,10 @@ function renderData(profile) {
       accessToken: 'pk.eyJ1Ijoiem0xdHJ5IiwiYSI6ImNqcmRwa2c3eTBrZWk0OXBvdnNlZGZqbHAifQ.4--wklrVhxA5gT6y4QM5RQ',
     }).addTo(mymap);
 
-    L.marker(profile.placeOfBirth.coordinate).addTo(mymap).bindPopup(`${profile.name} was born here.`).openPopup();
+    if (!localStorage.getItem('lang')) {
+      localStorage.setItem('lang', 'by');
+    }
+    L.marker(profile.placeOfBirth.coordinate).addTo(mymap).bindPopup(`${profile.name} ${uiData[localStorage.getItem('lang')].map_popup_text}`).openPopup();
   } else {
     $('.js-map-container').remove();
   }
