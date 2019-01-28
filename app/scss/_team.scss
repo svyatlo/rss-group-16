@@ -1,13 +1,22 @@
- body {
-  font-family: sans-serif;
+.team__wrapper{
+  justify-content: center;
+}
+.team__member-wrap {
+  flex-basis: 300px;
+  min-width: 17rem;
+  margin-top: 1rem;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 100px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.3em;
+.card-title {
+  word-wrap: normal;
+}
+
+@media (max-width: 1200px) {
+  .team__member-wrap {
+    min-width: 25rem;
+  }
+}
+
+@media (max-width: 992px) {
+  
 }
