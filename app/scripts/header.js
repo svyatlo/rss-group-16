@@ -74,7 +74,7 @@ $(() => {
     mapSecTitle.text(uiData[value].map_section_title);
     searchLabel.text(uiData[value].seach_label);
     searchInput.attr('placeholder', uiData[value].seach_input);
-    mapPopupText.text(`${currentProfile.name} ${uiData[value].map_popup_text}`);
+    mapPopupText.text(`${$('.js-photographer-name').text()} ${uiData[value].map_popup_text}`);
   }
 
   function renderUI() {
