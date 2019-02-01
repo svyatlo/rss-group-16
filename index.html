@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./scripts/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
     <title>Проект: Фотографы Беларуси</title>
   </head>
@@ -19,7 +19,6 @@
             <li class="nav-item">
               <a class="nav-link disabled" id="js-nav-home" href="#" tabindex="-1" aria-disabled="true">Главная</a>
             </li>
-            </li>
             <li class="nav-item">
               <a class="nav-link" id="js-nav-team" href="./team.html">Команда</a>
             </li>
@@ -28,9 +27,9 @@
             </li>
           </ul>
           <select class="custom-select header__nav-select col-2" id="js-lang-select">
-            <option value="ru">RU</option>
             <option value="by">BY</option>
             <option value="eng">ENG</option>
+            <option value="ru">RU</option>
           </select>
         </nav>
       </header>
@@ -40,20 +39,23 @@
           <p class="description__text" id="js-desc-text"></p>
         </div>
       </div>
-      <h2 class="author-of-the-day__title" id="js-day-author-title">Фотограф дня</h2>
+      <h2 class="author-of-the-day__title" id="js-day-author-title"></h2>
       <article class="author-of-the-day col-12">
         <div class="row">
-          <div class="author-of-the-day__photo col-12 col-sm-6 col-lg-4" id="js-author-pic">
-            <img class="author-of-the-day__pic rounded" alt="" id="js-author-pic">
-          </div>
-          <div class="author-of-the-day__desc col-12 col-sm-6 col-lg-8" id="js-author-desc">
-            <h3 class="author-of-the-day__name"></h3>
-            <p class="author-of-the-day__text">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptatum expedita soluta laborum reiciendis animi magni est esse laudantium qui
-              architecto necessitatibus iure quibusdam, asperiores quaerat optio repellat vel, corporis explicabo ab?
-              Exercitationem, molestias. Voluptates ex consectetur ratione reprehenderit eum culpa necessitatibus!
-              Obcaecati autem deserunt est sint ullam voluptates ad rem?</p>
-            <p> <a id='link-more' class="author-of-the-day__link" href=".">Подробнее</a></p>
+          <div class="col-12">
+              <div class="card-header text-white bg-info">
+                  <h3 class="card-title author-of-the-day__name"></h3>
+                </div>
+            <div class="card author-of-the-day">
+              <img class="card-img-top author-of-the-day__pic rounded" alt="Photogapher's portrait" src=".">
+              <div class="card-container">
+
+                  <div class="card-body">
+                    <p class="card-text author-of-the-day__text"></p>
+                    <p> <a id='link-more' class="author-of-the-day__link text-light btn btn-info" href="#"></a></p>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </article>

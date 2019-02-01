@@ -106,6 +106,7 @@ $(() => {
     } else {
       const selectLang = $('#js-lang-select');
       language = selectLang.val();
+      localStorage.setItem('lang', language);
       setUiValues(language);
     }
   }
